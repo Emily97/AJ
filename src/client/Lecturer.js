@@ -5,7 +5,7 @@ import './app.css';
 class Lecturer extends React.Component {
   render() {
     return (
-      <div className="card">
+      <div className="card shadow p-3 mb-5 bg-white rounded">
         <div className="card-body">
           <h2>{this.props.name}</h2>
           <figure>
