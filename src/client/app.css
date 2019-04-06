@@ -11,6 +11,10 @@ p {
   font-family:'Open Sans', sans-serif;
 }
 
+figure{
+    max-height: 225px;
+}
+
 .card{
   width: 370px;
   height: auto;
