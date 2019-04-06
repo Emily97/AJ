@@ -36,7 +36,7 @@ class LecturerList extends Component {
 
     return (
       <div className="container">
-        <h1 className="col">All Chefs</h1>
+        <h1>All Chefs</h1>
         <div>
           <div>{lecturerList}</div>
         </div>

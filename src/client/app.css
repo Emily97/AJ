@@ -16,7 +16,7 @@ figure{
 }
 
 .card{
-  width: 350px;
+  width: 370px;
   height: auto;
   /* max-width: 100%;
   max-height: 100%; */
@@ -26,8 +26,4 @@ figure{
 
 .card-body{
   /* background-color: grey; */
-}
-
-.col{
-  /* text-align: center; */
 }
