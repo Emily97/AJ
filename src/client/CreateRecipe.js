@@ -50,16 +50,18 @@ class CreateRecipe extends Component {
       <div className="container">
         <form onSubmit={this.handleSubmit}>
           <h2>Create New Recipe</h2>
-          <label>
+          <div className="form-group">
+            <label>
             Name:
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
-          </label>
-          <br />
-          <label>
+              <input type="text" name="name" placeholder="Recipe Name" value={this.state.name} onChange={this.handleChange} />
+            </label>
+          </div>
+          <div className="form-group">
+            <label>
             Cooking Time:
-            <input type="text" name="time" value={this.state.time} onChange={this.handleChange} />
-          </label>
-          <br />
+              <input type="text" name="time" placeholder="In minutes"value={this.state.time} onChange={this.handleChange} />
+            </label>
+          </div>
           <label>
             Cooking Level:
             <input type="text" name="level" value={this.state.level} onChange={this.handleChange} />
