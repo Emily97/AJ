@@ -63,7 +63,7 @@ class ModuleList extends Component {
           <div>
             <div className="col">
               <Link to={'/'}>
-                <button type="button">
+                <button type="button" className="btn btn-outline-dark">
                   Return
                 </button>
               </Link>
@@ -71,7 +71,7 @@ class ModuleList extends Component {
             <h1 className="col">All Recipes</h1>
             <div className="col">
               <Link to={'/create-recipe/'}>
-                <button type="button">
+                <button type="button" className="btn btn-outline-dark">
                   Create Recipe
                 </button>
               </Link>
@@ -90,7 +90,7 @@ const Module = (props) => {
         <h2>{props.name}</h2>
         <p>Cooking Time:{props.time} minutes</p>
         <p>Level: {props.level}</p>
-        <div className="col-button">
+        <div>
           <Link to={`/edit-recipe/${props.id}`}>
             <button type="button" className="btn btn-outline-dark">
             Edit Recipe
