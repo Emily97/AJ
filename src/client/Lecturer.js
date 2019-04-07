@@ -28,7 +28,7 @@ class Lecturer extends React.Component {
 
 Lecturer.propTypes = {
   id: PropTypes.number,
-  name: PropTypes.string,
+  name: PropTypes.number,
   image: PropTypes.number,
   region: PropTypes.string,
   email: PropTypes.string
