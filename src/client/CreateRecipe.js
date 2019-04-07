@@ -54,10 +54,12 @@ class CreateRecipe extends Component {
             Name:
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
           </label>
+          <br />
           <label>
             Cooking Time:
             <input type="text" name="time" value={this.state.time} onChange={this.handleChange} />
           </label>
+          <br />
           <label>
             Cooking Level:
             <input type="text" name="level" value={this.state.level} onChange={this.handleChange} />
