@@ -60,7 +60,7 @@ class ModuleList extends Component {
     return (
       <div>
         {moduleList.length ?
-          <div>
+          <div className="row">
             <div className="col">
               <Link to={'/'}>
                 <button type="button" className="btn btn-outline-dark">
