@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './app.css';
 
 class Lecturer extends React.Component {
@@ -24,5 +25,13 @@ class Lecturer extends React.Component {
     );
   }
 }
+
+Lecturer.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  image: PropTypes.number,
+  region: PropTypes.string,
+  email: PropTypes.string
+};
 
 export default Lecturer;
