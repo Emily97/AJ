@@ -50,7 +50,7 @@ class CreateRecipe extends Component {
       <div className="container">
         <form onSubmit={this.handleSubmit}>
           <h2>Create New Recipe</h2>
-          <div className="card">
+          <div className="card create">
             <div className="form-group">
               <label>
             Name:
