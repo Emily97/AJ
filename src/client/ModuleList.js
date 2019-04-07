@@ -68,8 +68,6 @@ class ModuleList extends Component {
                   Create Recipe
                 </button>
               </Link>
-            </div>
-            <div>
               <Link to={'/'}>
                 <button type="button" className="btn btn-outline-dark">
                   Return
