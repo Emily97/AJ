@@ -35,5 +35,5 @@ button{
 }
 
 .create{
-    align-self: center;
+    position: absolute;
 }
