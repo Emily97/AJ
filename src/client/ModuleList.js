@@ -61,18 +61,18 @@ class ModuleList extends Component {
       <div>
         {moduleList.length ?
           <div>
-            <div className="col">
-              <Link to={'/'}>
-                <button type="button" className="btn btn-outline-dark">
-                  Return
-                </button>
-              </Link>
-            </div>
             <h1 className="col">All Recipes</h1>
             <div className="col">
               <Link to={'/create-recipe/'}>
                 <button type="button" className="btn btn-outline-dark">
                   Create Recipe
+                </button>
+              </Link>
+            </div>
+            <div className="col">
+              <Link to={'/'}>
+                <button type="button" className="btn btn-outline-dark">
+                  Return
                 </button>
               </Link>
             </div>
