@@ -35,5 +35,5 @@ button{
 }
 
 .create{
-    align:center;
+    align-self: center;
 }
