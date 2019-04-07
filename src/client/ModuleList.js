@@ -69,8 +69,8 @@ class ModuleList extends Component {
                 </button>
               </Link>
               <Link to={'/'}>
-                <button type="button" className="btn btn-outline-dark">
-                  Return
+                <button type="button" className="btn btn-outline-light">
+                  Home
                 </button>
               </Link>
             </div>
