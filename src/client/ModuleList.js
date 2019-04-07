@@ -86,7 +86,7 @@ class ModuleList extends Component {
 const Module = (props) => {
   return (
     <div className="container">
-      <div className="card">
+      <div className="card shadow p-3 mb-5 bg-white rounded">
         <h2>{props.name}</h2>
         <p>Cooking Time:{props.time} minutes</p>
         <p>Level: {props.level}</p>

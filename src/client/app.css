@@ -25,6 +25,10 @@ figure{
   float:left;
 }
 
+button{
+    margin-right: 10px;
+}
+
 .card-body{
   /* background-color: grey; */
 }
