@@ -47,7 +47,7 @@ class CreateRecipe extends Component {
   render() {
     // note: name of the inputs must match the property names in state
     return (
-      <div>
+      <div className="container">
         <form onSubmit={this.handleSubmit}>
           <h2>Create New Recipe</h2>
           <label>
