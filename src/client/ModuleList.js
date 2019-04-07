@@ -86,19 +86,22 @@ class ModuleList extends Component {
 const Module = (props) => {
   return (
     <div className="container">
-      <div className="card col shadow p-3 mb-5 bg-white rounded">
-        <h2>{props.name}</h2>
-        <p>Cooking Time:{props.time} minutes</p>
-        <p>Level: {props.level}</p>
-        <div>
-          <Link to={`/edit-recipe/${props.id}`}>
-            <button type="button" className="btn btn-outline-dark">
+      <div className="row">
+        <div className="col"></div>
+        <div className="card col shadow p-3 mb-5 bg-white rounded">
+          <h2>{props.name}</h2>
+          <p>Cooking Time:{props.time} minutes</p>
+          <p>Level: {props.level}</p>
+          <div>
+            <Link to={`/edit-recipe/${props.id}`}>
+              <button type="button" className="btn btn-outline-dark">
             Edit Recipe
-            </button>
-          </Link>
-          <button type="button" className="btn btn-outline-dark" onClick={() => {props.handleDelete(props.id);}}>
+              </button>
+            </Link>
+            <button type="button" className="btn btn-outline-dark" onClick={() => {props.handleDelete(props.id);}}>
         Delete
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </div>
