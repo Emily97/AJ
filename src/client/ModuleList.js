@@ -92,11 +92,11 @@ const Module = (props) => {
         <p>Level: {props.level}</p>
         <div className="col-button">
           <Link to={`/edit-recipe/${props.id}`}>
-            <button type="button">
+            <button type="button" className="btn btn-outline-dark btn-lg">
             Edit Recipe
             </button>
           </Link>
-          <button type="button" onClick={() => {props.handleDelete(props.id);}}>
+          <button type="button" className="btn btn-outline-dark btn-lg" onClick={() => {props.handleDelete(props.id);}}>
         Delete
           </button>
         </div>
