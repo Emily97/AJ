@@ -65,7 +65,7 @@ class CreateRecipe extends Component {
           <div className="form-group">
             <label>
             Cooking Level:
-              <input type="text" name="level" value={this.state.level} onChange={this.handleChange} />
+              <input type="text" name="level" placeholder="Beginner, Medium, Hard" value={this.state.level} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">
@@ -77,7 +77,9 @@ class CreateRecipe extends Component {
                 {this.state.lecturers.map((l) => <option key={l._id} value={l._id}> {l.name} </option>)}
               </select>
             </label>
-            <input type="submit" value="Submit" />
+            <div className="form-group">
+              <input type="submit" value="Submit" />
+            </div>
           </div>
         </form>
       </div>
