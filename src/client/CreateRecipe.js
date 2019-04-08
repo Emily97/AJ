@@ -66,14 +66,14 @@ class CreateRecipe extends Component {
           <div className="form-group">
             <label>
             Cooking Level:
-              <input type="text" name="level" class="form-control" placeholder="Beginner, Medium, Hard" value={this.state.level} onChange={this.handleChange} />
+              <input type="text" name="level" class="form-control" placeholder="Easy, Medium, Hard" value={this.state.level} onChange={this.handleChange} />
             </label>
           </div>
-          <div className="form-group dropdown show">
+          <div className="form-group">
             <label>
             Chefs:
               <select
-                onChange={(e) => this.setState({lecturer_id: e.target.value, validationError: e.target.value === '' ? 'You must select a Chef' : ''})}>
+                className="dropdown show" onChange={(e) => this.setState({lecturer_id: e.target.value, validationError: e.target.value === '' ? 'You must select a Chef' : ''})}>
                 <option disabled selected option="true"> Select a Chef </option>
                 {this.state.lecturers.map((l) => <option key={l._id} value={l._id}> {l.name} </option>)}
               </select>
