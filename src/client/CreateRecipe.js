@@ -49,7 +49,7 @@ class CreateRecipe extends Component {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit}>
-          <h2>Create New Recipe</h2>
+          <h1>Create New Recipe</h1>
           <div className="form-group">
             <label>
             Name:

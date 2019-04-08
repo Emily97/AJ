@@ -56,7 +56,7 @@ class EditRecipe extends Component {
     // note: name of the inputs must match the property names in state
     return (
       <div className="container">
-        <h2>Edit Recipe</h2>
+        <h1>Edit Recipe</h1>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>
