@@ -69,7 +69,7 @@ class CreateRecipe extends Component {
               <input type="text" name="level" class="form-control" placeholder="Beginner, Medium, Hard" value={this.state.level} onChange={this.handleChange} />
             </label>
           </div>
-          <div className="form-group">
+          <div className="form-group dropdown show">
             <label>
             Chefs:
               <select
