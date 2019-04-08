@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 import './app.css';
 
 class ModuleList extends Component {
@@ -101,6 +102,14 @@ const Module = (props) => {
       </div>
     </div>
   );
+};
+
+Module.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  time: PropTypes.string,
+  level: PropTypes.string,
+  key: PropTypes.number
 };
 
 export default ModuleList;

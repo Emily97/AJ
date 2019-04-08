@@ -95,4 +95,12 @@ class EditRecipe extends Component {
   }
 }
 
+EditRecipe.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  time: PropTypes.string,
+  level: PropTypes.string,
+  key: PropTypes.number
+};
+
 export default EditRecipe;

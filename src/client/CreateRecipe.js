@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './app.css';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 
 class CreateRecipe extends Component {
@@ -86,5 +87,13 @@ class CreateRecipe extends Component {
     );
   }
 }
+
+CreateRecipe.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  time: PropTypes.string,
+  level: PropTypes.string,
+  key: PropTypes.number
+};
 
 export default CreateRecipe;
