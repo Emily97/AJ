@@ -61,19 +61,19 @@ class EditRecipe extends Component {
           <div className="form-group">
             <label>
             Name:
-              <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
+              <input type="text" name="name" class="form-control" value={this.state.name} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">
             <label>
             Cooking Time:
-              <input type="text" name="time" value={this.state.time} onChange={this.handleChange} />
+              <input type="text" name="time" class="form-control" value={this.state.time} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">
             <label>
             Cooking Level:
-              <input type="text" name="level" value={this.state.level} onChange={this.handleChange} />
+              <input type="text" name="level"  class="form-control" value={this.state.level} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">

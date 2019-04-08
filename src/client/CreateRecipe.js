@@ -53,19 +53,19 @@ class CreateRecipe extends Component {
           <div className="form-group">
             <label>
             Name:
-              <input type="text" name="name" placeholder="Recipe Name" value={this.state.name} onChange={this.handleChange} />
+              <input type="text" name="name" class="form-control" placeholder="Recipe Name" value={this.state.name} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">
             <label>
             Cooking Time:
-              <input type="text" name="time" placeholder="In minutes"value={this.state.time} onChange={this.handleChange} />
+              <input type="text" name="time" class="form-control" placeholder="In minutes"value={this.state.time} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">
             <label>
             Cooking Level:
-              <input type="text" name="level" placeholder="Beginner, Medium, Hard" value={this.state.level} onChange={this.handleChange} />
+              <input type="text" name="level" class="form-control" placeholder="Beginner, Medium, Hard" value={this.state.level} onChange={this.handleChange} />
             </label>
           </div>
           <div className="form-group">
