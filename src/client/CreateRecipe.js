@@ -73,7 +73,7 @@ class CreateRecipe extends Component {
             <label>
             Chefs:
               <select
-                className="dropdown show" onChange={(e) => this.setState({lecturer_id: e.target.value, validationError: e.target.value === '' ? 'You must select a Chef' : ''})}>
+                onChange={(e) => this.setState({lecturer_id: e.target.value, validationError: e.target.value === '' ? 'You must select a Chef' : ''})}>
                 <option disabled selected option="true"> Select a Chef </option>
                 {this.state.lecturers.map((l) => <option key={l._id} value={l._id}> {l.name} </option>)}
               </select>
