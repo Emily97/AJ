@@ -1,5 +1,5 @@
 body {
-  /* text-align: center; */
+  text-align: center;
   margin: auto;
 }
 
@@ -31,8 +31,4 @@ button{
 
 .card-body{
   /* background-color: red; */
-}
-
-.create{
-    position: absolute;
 }

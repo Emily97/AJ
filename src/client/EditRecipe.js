@@ -58,27 +58,37 @@ class EditRecipe extends Component {
       <div className="container">
         <h2>Edit Recipe</h2>
         <form onSubmit={this.handleSubmit}>
-          <label>
+          <div className="form-group">
+            <label>
             Name:
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
-          </label>
-          <label>
+              <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
+            </label>
+          </div>
+          <div className="form-group">
+            <label>
             Cooking Time:
-            <input type="text" name="time" value={this.state.time} onChange={this.handleChange} />
-          </label>
-          <label>
+              <input type="text" name="time" value={this.state.time} onChange={this.handleChange} />
+            </label>
+          </div>
+          <div className="form-group">
+            <label>
             Cooking Level:
-            <input type="text" name="level" value={this.state.level} onChange={this.handleChange} />
-          </label>
-          <label>
+              <input type="text" name="level" value={this.state.level} onChange={this.handleChange} />
+            </label>
+          </div>
+          <div className="form-group">
+            <label>
             Associated Chef:
-            <select
-              onChange={(e) => this.setState({lecturer_id: e.target.value, validationError: e.target.value === '' ? 'You must select a Chef' : ''})}>
-              <option disabled selected option="true"> Select a Chef </option>
-              {this.state.lecturers.map((l) => <option key={l._id} value={l._id}> {l.name} </option>)}
-            </select>
-          </label>
-          <input type="submit" value="Submit" />
+              <select
+                onChange={(e) => this.setState({lecturer_id: e.target.value, validationError: e.target.value === '' ? 'You must select a Chef' : ''})}>
+                <option disabled selected option="true"> Select a Chef </option>
+                {this.state.lecturers.map((l) => <option key={l._id} value={l._id}> {l.name} </option>)}
+              </select>
+            </label>
+          </div>
+          <div className="form-group">
+            <input type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     );
